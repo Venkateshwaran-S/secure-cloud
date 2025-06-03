@@ -1,0 +1,338 @@
+@charset "utf-8";
+
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+html, .main {
+    padding: 0;
+    margin: 0;
+    background: rgba(10, 26, 46, 0.9);
+}
+
+.clr {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Typography */
+h1 {
+    margin: 0;
+    padding: 30px 0 15px 30px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+h1 a, h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 span {
+    color: #16adf3;
+    font-family:  'Times New Roman', Times, serif;
+}
+
+h1 small {
+    font-family:  'Times New Roman', Times, serif;
+    display: block;
+    margin-top: 5px;
+}
+
+h2 {
+      font-family:  'Times New Roman', Times, serif;
+    color: #4fc3f7;
+    padding: 10px 0;
+    margin: 15px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(79, 195, 247, 0.3);
+}
+
+p {
+    margin: 10px 0;
+    padding: 0 0 10px 0;
+      font-family:  'Times New Roman', Times, serif;
+}
+
+a {
+    color: #4fc3f7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #82b1ff;
+}
+
+/* Layout */
+.header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, 
+.content .mainbar, .content .sidebar {
+    margin: 0;
+    padding: 0;
+}
+
+.content_resize, .fbg_resize, .footer_resize {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1200px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #0a1a2e 0%, #1a3a5a 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.header_resize {
+    margin: 0 0;
+    padding: 0;
+    max-width: 1800px;
+    margin-left: 15px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header .logo {
+    padding: 20px 0 20px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    flex: 1;
+}
+
+/* Navigation */
+.menu_nav {
+    padding: 0;
+}
+
+.menu_nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu_nav ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.menu_nav ul li a {
+    display: block;
+    padding: 25px 25px;
+    color: #e0e0e0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.menu_nav ul li.active a, 
+.menu_nav ul li a:hover {
+    color: #4fc3f7;
+    background: rgba(79, 195, 247, 0.1);
+}
+
+/* Content */
+.content_resize {
+    padding: 30px 0;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.content .mainbar {
+    float: left;
+    width: 65%;
+    padding: 0 20px;
+}
+
+.content .sidebar {
+    float: right;
+    width: 30%;
+    background: rgba(10, 26, 46, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Login Form */
+#form1 {
+    background: rgba(10, 26, 46, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#form1 table {
+    width: 100%;
+}
+
+#form1 input[type="text"],
+#form1 input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid rgba(79, 195, 247, 0.3);
+    border-radius: 4px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+#form1 input[type="text"]:focus,
+#form1 input[type="password"]:focus {
+    border-color: #4fc3f7;
+    outline: none;
+    box-shadow: 0 0 8px rgba(79, 195, 247, 0.4);
+}
+
+#form1 input[type="submit"] {
+    background: linear-gradient(135deg, #4fc3f7 0%, #1976d2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    margin: 15px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#form1 input[type="submit"]:hover {
+    background: linear-gradient(135deg, #64b5f6 0%, #1565c0 100%);
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.4);
+}
+
+.red {
+    color: #ff5252 !important;
+    font-weight: bold;
+}
+
+/* Sidebar Menu */
+ul.sb_menu, ul.ex_menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.sb_menu li, ul.ex_menu li {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(79, 195, 247, 0.1);
+}
+
+ul.sb_menu li a, ul.ex_menu li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    transition: all 0.3s;
+}
+
+ul.sb_menu li a:hover, ul.ex_menu li a:hover {
+    color: #4fc3f7;
+    padding-left: 10px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #0a1a2e 0%, #1a3a5a 100%);
+    margin-top: 40px;
+    padding: 20px 0;
+    color: #b0bec5;
+}
+
+.footer_resize {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p.lf {
+    margin: 0;
+    padding: 0;
+}
+
+ul.fmenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+ul.fmenu li {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+ul.fmenu li a {
+    color: #b0bec5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ul.fmenu li a:hover {
+    color: #4fc3f7;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .content .mainbar, 
+    .content .sidebar {
+        width: 100%;
+        float: none;
+    }
+    
+    .header_resize {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .menu_nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .menu_nav ul li a {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content_resize, .mainbar, .sidebar, .header_resize {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    #form1 input[type="submit"] {
+        width: 100%;
+    }
+
+    .menu_nav ul li a {
+        font-size: 14px;
+    }
+}
